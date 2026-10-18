@@ -1,4 +1,4 @@
-# Dr. Taseal's Survival Quest
+
 
 A personal countdown adventure built with React and Vite.
 
