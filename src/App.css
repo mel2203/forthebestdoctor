@@ -133,6 +133,7 @@ h1{font-family:'Press Start 2P',monospace;font-size:clamp(19px,4.8vw,37px);line-
 }
 @media(prefers-reduced-motion:reduce){.intro-walker,.intro-character,.intro-stars{animation:none!important}}
 
+
 /* Cutscene viewport layout: all scene content and controls stay inside the screen. */
 .quest-intro{
   box-sizing:border-box;
