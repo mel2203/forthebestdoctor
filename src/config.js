@@ -15,9 +15,9 @@ export const MESSAGES = [
   "I forgot to push the new letters on github.. im so sorry. I hope youre doing good. i miss you terribly and i hope to see you relax and having fun soon inshallah", // Drop 5 · Oct 26
   "We have 2 more months till 2027, and lets make the best of it, my new years resolution this year was to climb a mountain, obviously i didnt do that. If ur reading this, what 2026 goal do u wanna achieve before the end of the year? ", // Drop 6 · Oct 28
   "Tomorrow is halloween. We don't celebrate it but be careful anyway, i know u get scared easily, read ayatul kursi. Take Care tashu :>", // Drop 7 · Oct 30
-  "", // Drop 8 · Nov 1
-  "", // Drop 9 · Nov 3
-  "", // Drop 10 · Nov 5
+  "if noone has told u this today, im proud of you.", // Drop 8 · Nov 1
+  "I miss our momemts together in Malaysia :'(( I aint never had that much fun trust.  I still think about those little moments and smile. I wish we could've had more time together, but I'm really glad we got to experience that. You made those 12 days so special for me", // Drop 9 · Nov 3
+  "", // Drop 10 · Nov 5s
   "", // Drop 11 · Nov 7
   "", // Drop 12 · Nov 9
   "", // Drop 13 · Nov 11
