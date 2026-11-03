@@ -17,8 +17,8 @@ export const MESSAGES = [
   "Tomorrow is halloween. We don't celebrate it but be careful anyway, i know u get scared easily, read ayatul kursi. Take Care tashu :>", // Drop 7 · Oct 30
   "if noone has told u this today, im proud of you.", // Drop 8 · Nov 1
   "I miss our momemts together in Malaysia :'(( I aint never had that much fun trust.  I still think about those little moments and smile. I wish we could've had more time together, but I'm really glad we got to experience that. You made those 12 days so special for me", // Drop 9 · Nov 3
-  "", // Drop 10 · Nov 5s
-  "", // Drop 11 · Nov 7
+  "Test to see if ur reading this! if u are send me \"lyana u look so pretty today\"", // Drop 10 · Nov 5
+  "AAlmost there! Your well deserved break is coming up soon!! Im also stressing over finals next week but one thing is for sure, I'm here for you!", // Drop 11 · Nov 7
   "", // Drop 12 · Nov 9
   "", // Drop 13 · Nov 11
   "", // Drop 14 · Nov 13
