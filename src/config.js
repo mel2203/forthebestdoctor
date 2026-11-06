@@ -33,5 +33,5 @@ export const CHECKLIST = [
   "100 Plus",
   "Socks",
   "Watch",
-  "Quality Sleep"
+  "Are you eating and drinking enough?",
 ];
