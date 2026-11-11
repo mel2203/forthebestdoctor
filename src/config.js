@@ -20,8 +20,8 @@ export const MESSAGES = [
   "Test to see if ur reading this! if u are send me \"lyana u look so pretty today\"", // Drop 10 · Nov 5
   "Almost there! Your well deserved break is coming up soon!! Im also stressing over finals next week but one thing is for sure, I'm here for you!", // Drop 11 · Nov 7
   "Never gonna give u up never gonna let u down. never gonna run around and desert you", // Drop 12 · Nov 9
-  "", // Drop 13 · Nov 11
-  "", // Drop 14 · Nov 13
+  "3 things i like about you: 1. I like how caring you are and so kind to me and everyone, 2. how hard you always work to achieve your dreams and goals, you always tell me about how youre working harder and i find it very respectable 3. your determination in life and how goal oriented you are", // Drop 13 · Nov 11
+  "Almost there!!! Lets talk soon!!", // Drop 14 · Nov 13
 ];
 export const MESSAGE_COUNT = MESSAGES.length;
 
