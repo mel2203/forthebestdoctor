@@ -1,4 +1,5 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import confetti from "canvas-confetti";
 import Doctor from "./Doctor";
 import {
   START,
@@ -177,6 +178,58 @@ export default function App() {
   const p = Math.max(0, Math.min((now - START) / total, 1));
   const left = Math.max(0, END - now);
   const done = now >= END;
+  const celebrationPlayed = useRef(false);
+  useEffect(() => {
+    if (!done || showIntro || celebrationPlayed.current) return undefined;
+    celebrationPlayed.current = true;
+
+    try {
+      if (localStorage.getItem("taseal-celebration-shown") === "true") {
+        return undefined;
+      }
+      localStorage.setItem("taseal-celebration-shown", "true");
+    } catch {
+      // The on-screen celebration still works if browser storage is unavailable.
+    }
+
+    const colors = ["#68ecff", "#eaff5c", "#ff78c9", "#fff0bd", "#a78bfa"];
+    const burst = () => {
+      confetti({
+        particleCount: 8,
+        angle: 60,
+        spread: 62,
+        origin: { x: 0, y: 0.72 },
+        colors,
+        disableForReducedMotion: true,
+      });
+      confetti({
+        particleCount: 8,
+        angle: 120,
+        spread: 62,
+        origin: { x: 1, y: 0.72 },
+        colors,
+        disableForReducedMotion: true,
+      });
+    };
+
+    confetti({
+      particleCount: 110,
+      spread: 92,
+      startVelocity: 42,
+      origin: { y: 0.58 },
+      colors,
+      disableForReducedMotion: true,
+    });
+    const interval = window.setInterval(burst, 320);
+    const timeout = window.setTimeout(
+      () => window.clearInterval(interval),
+      3200,
+    );
+    return () => {
+      window.clearInterval(interval);
+      window.clearTimeout(timeout);
+    };
+  }, [done, showIntro]);
   const messageUnlocks = useMemo(
     () =>
       Array.from({ length: MESSAGE_COUNT }, (_, i) =>
@@ -248,6 +301,17 @@ export default function App() {
 
   return (
     <main>
+      {done && (
+        <section className="completion-card" role="status" aria-live="polite">
+          <span className="completion-kicker">✦ QUEST COMPLETE ✦</span>
+          <h2>
+            CONGRATULATIONS,
+            <br />
+            TASEAL!
+          </h2>
+          <p>You made it to your well-earned break. I'm so proud of you!</p>
+        </section>
+      )}
       <header className="hero">
         <div className="eyebrow">
           <span className="pulse" /> Lyana tries coding

@@ -131,6 +131,37 @@ h1{font-family:'Press Start 2P',monospace;font-size:clamp(19px,4.8vw,37px);line-
   .item-icon{font-size:13px}
   .message-mascot{right:8px;bottom:8px}
 }
+
+.completion-card{
+  position:relative;
+  overflow:hidden;
+  margin:0 0 20px;
+  padding:clamp(22px,5vw,38px) 20px;
+  border:3px solid #eaff5c;
+  background:linear-gradient(135deg,#292052,#171333 72%);
+  box-shadow:6px 6px 0 #100c2a, inset 0 0 0 3px #68ecff55;
+  text-align:center;
+  animation:completion-pop .5s steps(5,end) both;
+}
+.completion-kicker{
+  color:#68ecff;
+  font:9px/1.8 'Press Start 2P',monospace;
+  letter-spacing:.08em;
+}
+.completion-card h2{
+  margin:16px 0 12px;
+  color:#eaff5c;
+  font:clamp(15px,4vw,25px)/1.8 'Press Start 2P',monospace;
+  text-shadow:3px 3px #b63f98,6px 6px #100b27;
+}
+.completion-card p{
+  margin:0;
+  color:#fff0bd;
+  font:clamp(14px,2.5vw,18px)/1.6 'Pixelify Sans',monospace;
+}
+@keyframes completion-pop{from{opacity:0;transform:translateY(10px) scale(.97)}to{opacity:1;transform:none}}
+@media(max-width:680px){.completion-card{margin-bottom:14px;padding:20px 12px}.completion-kicker{font-size:7px}}
+@media(prefers-reduced-motion:reduce){.completion-card{animation:none}}
 @media(prefers-reduced-motion:reduce){.intro-walker,.intro-character,.intro-stars{animation:none!important}}
 
 

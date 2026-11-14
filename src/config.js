@@ -1,7 +1,7 @@
 // Dates are in Pittsburgh / Philadelphia local time (Eastern Time).
 export const TIME_ZONE = "America/New_York";
 export const START = new Date("2026-10-01T00:00:00-04:00");
-export const END = new Date("2026-11-16T23:59:59-05:00");
+export const END = new Date("2026-11-13T23:59:59-05:00");
 export const MESSAGE_INTERVAL_DAYS = 2;
 export const MESSAGE_START = new Date("2026-10-18T00:00:00-04:00");
 
